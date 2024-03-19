@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrinceps.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrincepsSemiBold.ttf');
+  font-weight: 600;
+}
+.characters_page h1,
+.armor_page h1,
+.weapons_page h1,
+.characters_page h2,
+.armor_page h2,
+.weapons_page h2,
+.characters_page h3,
+.armor_page h3,
+.weapons_page h3,
+.characters_page h4,
+.armor_page h4,
+.weapons_page h4,
+.characters_page p,
+.armor_page p,
+.weapons_page p {
+  margin: 0 0 0 0;
+}
+.characters_page .butt,
+.armor_page .butt,
+.weapons_page .butt {
+  z-index: 10;
+  position: fixed;
+  top: 70px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  background: url(/assets/img/note.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.characters_page .cont,
+.armor_page .cont,
+.weapons_page .cont {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 82%;
+  position: relative;
+  overflow: hidden;
+}
+.characters_page .blocks,
+.armor_page .blocks,
+.weapons_page .blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.characters_page .block,
+.armor_page .block,
+.weapons_page .block {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 80px 10px 10px 10px;
+  text-align: center;
+  background: center center;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+.characters_page .block .text,
+.armor_page .block .text,
+.weapons_page .block .text {
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(255, 204, 0, 0.49);
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.5s, text-shadow 2s;
+  overflow: hidden;
+}
+.characters_page .block .text:hover,
+.armor_page .block .text:hover,
+.weapons_page .block .text:hover {
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 1em rgba(255, 201, 126, 0.6), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.characters_page .block p,
+.armor_page .block p,
+.weapons_page .block p {
+  color: #fff;
+}
+.characters_page a,
+.armor_page a,
+.weapons_page a {
+  text-decoration: none;
+  color: #fff;
+}
+.characters_page a:visited,
+.armor_page a:visited,
+.weapons_page a:visited {
+  color: #fff;
+}
+.characters_page .itemIt,
+.armor_page .itemIt,
+.weapons_page .itemIt {
+  display: list-item;
+  margin: 0 0 15px 20px;
+  font-size: 22px;
+  color: #ab9644;
+}
+.characters_page .itemIt:visited,
+.armor_page .itemIt:visited,
+.weapons_page .itemIt:visited {
+  color: #554f32;
+}
+.characters_page .itemIt:visited:hover,
+.armor_page .itemIt:visited:hover,
+.weapons_page .itemIt:visited:hover {
+  color: #716941;
+}
+.characters_page .itemIt::marker,
+.armor_page .itemIt::marker,
+.weapons_page .itemIt::marker {
+  color: #fff;
+}
+.characters_page .itemIt:hover,
+.armor_page .itemIt:hover,
+.weapons_page .itemIt:hover {
+  color: #ddc04b;
+}
+.characters_page body,
+.armor_page body,
+.weapons_page body {
+  margin: 0;
+  font-family: 'OptimusPrinceps', Georgia, monospace;
+  font-weight: normal;
+  position: relative;
+  background: #000000;
+}
+.characters_page header,
+.armor_page header,
+.weapons_page header {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  user-select: none;
+}
+.characters_page header .headerCont,
+.armor_page header .headerCont,
+.weapons_page header .headerCont {
+  display: flex;
+}
+.characters_page header .headerCont .foreword,
+.armor_page header .headerCont .foreword,
+.weapons_page header .headerCont .foreword {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  text-align: center;
+}
+.characters_page header .headerCont .foreword h1,
+.armor_page header .headerCont .foreword h1,
+.weapons_page header .headerCont .foreword h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 0.2em rgba(255, 201, 126, 0.3), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.characters_page header .headerCont .foreword p,
+.armor_page header .headerCont .foreword p,
+.weapons_page header .headerCont .foreword p {
+  margin: 5px 0 0 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.characters_page main .forBackground,
+.armor_page main .forBackground,
+.weapons_page main .forBackground {
+  background: #000000;
+  user-select: none;
+}
+.characters_page main .forBackground .menuDirectory,
+.armor_page main .forBackground .menuDirectory,
+.weapons_page main .forBackground .menuDirectory {
+  display: flex;
+  flex-direction: column;
+}
+.characters_page footer,
+.armor_page footer,
+.weapons_page footer {
+  display: flex;
+  align-items: center;
+  min-height: 250px;
+  background: #000000;
+  text-align: center;
+}
+.characters_page footer .back_menu,
+.armor_page footer .back_menu,
+.weapons_page footer .back_menu {
+  margin-bottom: 30px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.characters_page footer .back_menu .btn_menu,
+.armor_page footer .back_menu .btn_menu,
+.weapons_page footer .back_menu .btn_menu {
+  font-size: 26px;
+  transition: all 0.5s;
+}
+.characters_page footer .back_menu .btn_menu:hover,
+.armor_page footer .back_menu .btn_menu:hover,
+.weapons_page footer .back_menu .btn_menu:hover {
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 1em rgba(255, 201, 126, 0.6), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.characters_page footer .copy,
+.armor_page footer .copy,
+.weapons_page footer .copy,
+.characters_page footer p,
+.armor_page footer p,
+.weapons_page footer p {
+  margin: 32px 0;
+  color: white;
+  font-size: 15px;
+}
+.characters_page footer .copySpan,
+.armor_page footer .copySpan,
+.weapons_page footer .copySpan {
+  margin-right: 6px;
+}

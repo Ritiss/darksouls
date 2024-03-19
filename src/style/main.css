@@ -1,0 +1,122 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+menu,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1%;
+  max-width: 1600px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1500px) {
+  .cont {
+    width: 985px;
+  }
+}
+@media (max-width: 1024px) {
+  .cont {
+    width: 785px;
+  }
+}
+@media (max-width: 768px) {
+  .cont {
+    width: 87%;
+  }
+}
+menu {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+menu li {
+  margin-right: 60px;
+  font-weight: bold;
+}
+menu li:last-of-type {
+  margin-right: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a.active,
+a:hover {
+  color: #FE4444;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+h2 {
+  margin-bottom: 20px;
+  font-size: 52px;
+}
+.subHeading {
+  margin-bottom: 44px;
+  font-size: 24px;
+}
+p {
+  line-height: 40px;
+}
+.link {
+  border: 0;
+  padding: 10px 40px;
+}
+.link a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.whiteLink {
+  background-color: transparent;
+}
+.whiteLink a {
+  cursor: pointer;
+}
+.redLink {
+  background-color: #FE4444;
+  cursor: pointer;
+}
+.redLink a {
+  color: white;
+}
+.redLink:hover {
+  background-color: #181818;
+}
+.blackLink {
+  border: 1px solid #181818;
+  cursor: pointer;
+}
+.blackLink a {
+  color: #181818;
+}
+.blackLink:hover {
+  background-color: #181818;
+}
+.blackLink:hover a {
+  color: white;
+}

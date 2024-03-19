@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrinceps.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrincepsSemiBold.ttf');
+  font-weight: 600;
+}
+.character_page * {
+  margin: 0;
+  padding: 0;
+}
+.character_page body {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  font-family: OptimusPrinceps, 'Inter', Courier, monospace;
+  background: #000000;
+  user-select: none;
+}
+.character_page .butt {
+  z-index: 10;
+  position: fixed;
+  top: 70px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  background: url(/assets/img/note.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.character_page .chs {
+  margin: 0 15px 0 15px;
+  border-bottom: 1px solid rgba(255, 204, 0, 0.49);
+}
+.character_page .param {
+  flex-direction: column;
+  width: 80%;
+  height: 18%;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 600;
+}
+.character_page .param p:last-of-type {
+  font-size: 33px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.character_page .tex {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.character_page .tex p {
+  font-size: 28px;
+  margin-left: 20px;
+}
+.character_page .bigBoy,
+.character_page .backgr,
+.character_page .cont1,
+.character_page .cont2,
+.character_page .hp,
+.character_page .souls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.character_page .souls,
+.character_page .description {
+  border: none;
+}
+.character_page main .characterList {
+  background: #06020f;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.character_page main .characterList .bigBoy {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+}
+.character_page main .characterList .bigBoy .backgr {
+  width: 90%;
+  height: 80%;
+  background: url(/assets/img/menu.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.character_page main .characterList .bigBoy .backgr .block {
+  width: 55%;
+  height: 80%;
+  display: flex;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont1,
+.character_page main .characterList .bigBoy .backgr .block .cont2 {
+  flex-direction: column;
+  color: #fff;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont1 {
+  width: 32%;
+  height: 100%;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont1 .img {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: center;
+  border: 1px solid rgba(255, 204, 0, 0.49);
+  box-shadow: inset 0px 0px 10px rgba(255, 204, 0, 0.49);
+}
+.character_page main .characterList .bigBoy .backgr .block .cont1 .hp {
+  margin-bottom: 10px;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont2 {
+  width: 68%;
+  height: 100%;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont2 .name {
+  height: 15%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont2 .type {
+  height: 15%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont2 .type p:first-letter {
+  text-transform: uppercase;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont2 .description {
+  align-items: flex-start;
+  height: 60%;
+  font-style: italic;
+  text-align: justify;
+}
+.character_page main .characterList .bigBoy .backgr .block .cont2 .description p {
+  margin-top: 20px;
+  font-size: 24px;
+}

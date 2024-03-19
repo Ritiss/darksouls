@@ -1,0 +1,219 @@
+.weapon_page {
+
+    @font-face {
+        font-family: 'OptimusPrinceps';
+        src: local('OptimusPrinceps'),
+            url('/assets/fonts/OptimusPrinceps.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'OptimusPrinceps';
+        src: local('OptimusPrinceps'),
+            url('/assets/fonts/OptimusPrincepsSemiBold.ttf');
+        font-weight: 600;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        font-family: OptimusPrinceps, 'Inter', Courier, monospace;
+        background: #000000;
+        user-select: none;
+    }
+
+    .butt {
+        z-index: 10;
+        position: fixed;
+        top: 70px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+        background: url(/assets/img/note.png) no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+    }
+
+    .chs {
+        margin: 0 15px 0 15px;
+        border-bottom: 1px solid rgba(255, 204, 0, 0.49);
+    }
+
+    .param {
+        flex-direction: column;
+        width: 80%;
+        height: 18%;
+
+        text-transform: uppercase;
+        overflow: hidden;
+        font-size: 22px;
+        font-weight: 600;
+
+        p:last-of-type {
+            font-size: 35px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+    }
+
+    .tex {
+        display: flex;
+        align-items: center;
+        width: 90%;
+
+        p {
+            font-size: 28px;
+            margin-left: 20px;
+        }
+    }
+
+    .bigBoy,
+    .backgr,
+    .cont1,
+    .cont2,
+    .weight,
+    .stats,
+    .defense,
+    .res {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img,
+    .weight,
+    .stats {
+        border: none;
+    }
+
+    main {
+
+        .characterList {
+            background: #06020f;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            .bigBoy {
+                position: fixed;
+                height: 100vh;
+                width: 100%;
+
+                .backgr {
+                    width: 90%;
+                    height: 80%;
+                    background: url(/assets/img/menu.png);
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    .block {
+                        width: 55%;
+                        height: 80%;
+                        display: flex;
+
+                        .cont1,
+                        .cont2 {
+                            flex-direction: column;
+                            color: #fff;
+                        }
+
+                        .cont1 {
+                            width: 32%;
+                            height: 100%;
+
+                            .img {
+                                margin-bottom: 20px;
+                                width: 80%;
+                                height: 50%;
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                                background-position: center;
+                                border: 1px solid rgba(255, 204, 0, 0.49);
+                                box-shadow: inset 0px 0px 10px rgba(255, 204, 0, 0.49);
+                            }
+
+                            .weight {
+                                margin: 30px 0 50px 0;
+                            }
+                        }
+
+                        .cont2 {
+                            width: 68%;
+                            height: 100%;
+
+                            .name {
+                                height: 15%;
+                                margin-bottom: 10px;
+                            }
+
+                            .type {
+                                height: 15%;
+                                margin-bottom: 10px;
+
+                                p:first-letter {
+									text-transform: uppercase;
+								}
+                            }
+
+                            .description {
+                                align-items: flex-start;
+                                height: 25%;
+                                overflow: hidden;
+                                font-style: italic;
+
+                                p {
+                                    margin-top: 10px;
+                                    font-size: 24px;
+                                }
+                            }
+
+                            .stats {
+                                height: 35%;
+                                flex-direction: column;
+
+                                img {
+                                    height: 30px;
+                                    width: 30px;
+                                }
+
+                                p {
+                                    margin: 0;
+                                    font-size: 26px;
+                                }
+
+                                .defense {
+                                    margin-top: 20px;
+                                }
+
+                                .res {
+                                    margin-top: 15px;
+                                }
+
+                                .defense,
+                                .res {
+                                    width: 100%;
+
+
+                                    div {
+                                        margin: 0 30px 0 30px;
+                                        display: flex;
+                                        align-items: center;
+                                        flex-direction: column;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

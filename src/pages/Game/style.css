@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrinceps.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'OptimusPrinceps';
+  src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrincepsSemiBold.ttf');
+  font-weight: 600;
+}
+.Dark_Souls_page h1,
+.Dark_Souls_II_page h1,
+.Dark_Souls_III_page h1,
+.Dark_Souls_page h2,
+.Dark_Souls_II_page h2,
+.Dark_Souls_III_page h2,
+.Dark_Souls_page h3,
+.Dark_Souls_II_page h3,
+.Dark_Souls_III_page h3,
+.Dark_Souls_page h4,
+.Dark_Souls_II_page h4,
+.Dark_Souls_III_page h4,
+.Dark_Souls_page p,
+.Dark_Souls_II_page p,
+.Dark_Souls_III_page p {
+  margin: 0 0 0 0;
+}
+.Dark_Souls_page .par,
+.Dark_Souls_II_page .par,
+.Dark_Souls_III_page .par {
+  position: absolute;
+}
+.Dark_Souls_page .butt,
+.Dark_Souls_II_page .butt,
+.Dark_Souls_III_page .butt {
+  z-index: 10;
+  position: fixed;
+  top: 70px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  background: url(/assets/img/note.png) no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.Dark_Souls_page .cont,
+.Dark_Souls_II_page .cont,
+.Dark_Souls_III_page .cont {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 82%;
+  position: relative;
+  overflow: hidden;
+}
+.Dark_Souls_page .block,
+.Dark_Souls_II_page .block,
+.Dark_Souls_III_page .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin: 80px 10px 10px 10px;
+  border-radius: 50%;
+  text-align: center;
+  background: center center;
+  background-repeat: no-repeat;
+  background-color: #161616;
+  user-select: none;
+}
+.Dark_Souls_page .block:hover,
+.Dark_Souls_II_page .block:hover,
+.Dark_Souls_III_page .block:hover {
+  cursor: pointer;
+}
+.Dark_Souls_page .block:hover .text,
+.Dark_Souls_II_page .block:hover .text,
+.Dark_Souls_III_page .block:hover .text {
+  opacity: 1;
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 1em rgba(255, 201, 126, 0.6), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.Dark_Souls_page .block .text,
+.Dark_Souls_II_page .block .text,
+.Dark_Souls_III_page .block .text {
+  opacity: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 300px;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  background: rgba(22, 22, 22, 0.2);
+  backdrop-filter: blur(3px);
+  color: #ffffff;
+  transition: 0.5s, text-shadow 2s;
+  overflow: hidden;
+}
+.Dark_Souls_page .circles,
+.Dark_Souls_II_page .circles,
+.Dark_Souls_III_page .circles {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.Dark_Souls_page .element-animation,
+.Dark_Souls_II_page .element-animation,
+.Dark_Souls_III_page .element-animation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.Dark_Souls_page .element-animation.element-show,
+.Dark_Souls_II_page .element-animation.element-show,
+.Dark_Souls_III_page .element-animation.element-show {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateY(0%);
+}
+.Dark_Souls_page a,
+.Dark_Souls_II_page a,
+.Dark_Souls_III_page a {
+  text-decoration: none;
+  color: #fff;
+}
+.Dark_Souls_page a:visited,
+.Dark_Souls_II_page a:visited,
+.Dark_Souls_III_page a:visited {
+  color: #fff;
+}
+.Dark_Souls_page body,
+.Dark_Souls_II_page body,
+.Dark_Souls_III_page body {
+  margin: 0;
+  font-family: 'OptimusPrinceps', Georgia, monospace;
+  font-weight: normal;
+  position: relative;
+  background: #000000;
+}
+.Dark_Souls_page header,
+.Dark_Souls_II_page header,
+.Dark_Souls_III_page header {
+  display: flex;
+  align-items: center;
+  height: 820px;
+  user-select: none;
+}
+.Dark_Souls_page header .headerCont,
+.Dark_Souls_II_page header .headerCont,
+.Dark_Souls_III_page header .headerCont {
+  display: flex;
+  min-height: 855px;
+}
+.Dark_Souls_page header .headerCont .foreword,
+.Dark_Souls_II_page header .headerCont .foreword,
+.Dark_Souls_III_page header .headerCont .foreword {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  text-align: center;
+}
+.Dark_Souls_page header .headerCont .foreword h1,
+.Dark_Souls_II_page header .headerCont .foreword h1,
+.Dark_Souls_III_page header .headerCont .foreword h1 {
+  font-size: 115px;
+  font-weight: 700;
+  color: #ffffff;
+  animation: ani 6s, textadd 6s ease-in-out;
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 1em rgba(255, 201, 126, 0.6), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.Dark_Souls_page header .headerCont .foreword p,
+.Dark_Souls_II_page header .headerCont .foreword p,
+.Dark_Souls_III_page header .headerCont .foreword p {
+  margin: 15px 0 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  animation: ani 9s, textadd 9s ease-in-out;
+}
+.Dark_Souls_page header .video,
+.Dark_Souls_II_page header .video,
+.Dark_Souls_III_page header .video {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.Dark_Souls_page main h3,
+.Dark_Souls_II_page main h3,
+.Dark_Souls_III_page main h3 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.Dark_Souls_page main .forBack,
+.Dark_Souls_II_page main .forBack,
+.Dark_Souls_III_page main .forBack {
+  z-index: 1;
+  user-select: none;
+  background: url(/assets/img/back.png) no-repeat;
+  background-size: 100%;
+}
+.Dark_Souls_page main .forBack .forDescription,
+.Dark_Souls_II_page main .forBack .forDescription,
+.Dark_Souls_III_page main .forBack .forDescription {
+  display: flex;
+  align-items: center;
+  height: 820px;
+}
+.Dark_Souls_page main .forBack .forDescription .img_desc,
+.Dark_Souls_II_page main .forBack .forDescription .img_desc,
+.Dark_Souls_III_page main .forBack .forDescription .img_desc {
+  width: 35%;
+  height: 500px;
+  background: url(/assets/img/ds1_img.png) no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+.Dark_Souls_page main .forBack .forDescription .desc,
+.Dark_Souls_II_page main .forBack .forDescription .desc,
+.Dark_Souls_III_page main .forBack .forDescription .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 65%;
+  color: #fff;
+}
+.Dark_Souls_page main .forBack .forDescription .desc h2,
+.Dark_Souls_II_page main .forBack .forDescription .desc h2,
+.Dark_Souls_III_page main .forBack .forDescription .desc h2,
+.Dark_Souls_page main .forBack .forDescription .desc p,
+.Dark_Souls_II_page main .forBack .forDescription .desc p,
+.Dark_Souls_III_page main .forBack .forDescription .desc p {
+  margin: 0 50px;
+}
+.Dark_Souls_page main .forBack .forDescription .desc h2,
+.Dark_Souls_II_page main .forBack .forDescription .desc h2,
+.Dark_Souls_III_page main .forBack .forDescription .desc h2 {
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.Dark_Souls_page main .forBack .forDescription .desc h2::after,
+.Dark_Souls_II_page main .forBack .forDescription .desc h2::after,
+.Dark_Souls_III_page main .forBack .forDescription .desc h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 60px;
+  background: rgba(255, 204, 0, 0.49);
+}
+.Dark_Souls_page main .forBack .forDescription .desc p,
+.Dark_Souls_II_page main .forBack .forDescription .desc p,
+.Dark_Souls_III_page main .forBack .forDescription .desc p {
+  margin-bottom: 5px;
+  font-size: 22px;
+  text-align: justify;
+}
+.Dark_Souls_page main .forBack .forDescription .desc .btn,
+.Dark_Souls_II_page main .forBack .forDescription .desc .btn,
+.Dark_Souls_III_page main .forBack .forDescription .desc .btn {
+  cursor: pointer;
+  margin: 20px 50px;
+  width: 150px;
+  padding: 14px;
+  border: 2px solid rgba(255, 204, 0, 0.49);
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+}
+.Dark_Souls_page main .forBack .forDescription .desc .btn:hover,
+.Dark_Souls_II_page main .forBack .forDescription .desc .btn:hover,
+.Dark_Souls_III_page main .forBack .forDescription .desc .btn:hover {
+  background: #161616;
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 1em rgba(255, 201, 126, 0.6), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.Dark_Souls_page main .forBack .forDescription .desc .btn:active,
+.Dark_Souls_II_page main .forBack .forDescription .desc .btn:active,
+.Dark_Souls_III_page main .forBack .forDescription .desc .btn:active {
+  background: #161616;
+}
+.Dark_Souls_page main .forBackground,
+.Dark_Souls_II_page main .forBackground,
+.Dark_Souls_III_page main .forBackground {
+  background: #000000;
+  user-select: none;
+}
+.Dark_Souls_page main .forBackground .menuDirectory,
+.Dark_Souls_II_page main .forBackground .menuDirectory,
+.Dark_Souls_III_page main .forBackground .menuDirectory {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+}
+.Dark_Souls_page main .forBackground .menuDirectory h4,
+.Dark_Souls_II_page main .forBackground .menuDirectory h4,
+.Dark_Souls_III_page main .forBackground .menuDirectory h4 {
+  margin: 0 auto;
+  margin-top: 180px;
+  border-bottom: 2px solid rgba(255, 204, 0, 0.49);
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.Dark_Souls_page main .forBackground .menuDirectory .circleDrink1,
+.Dark_Souls_II_page main .forBackground .menuDirectory .circleDrink1,
+.Dark_Souls_III_page main .forBackground .menuDirectory .circleDrink1 {
+  background-image: url(/assets/img/gwyn.jpg);
+  background-size: 125%;
+}
+.Dark_Souls_page main .forBackground .menuDirectory .circleDrink2,
+.Dark_Souls_II_page main .forBackground .menuDirectory .circleDrink2,
+.Dark_Souls_III_page main .forBackground .menuDirectory .circleDrink2 {
+  background-image: url(/assets/img/armor.jpg);
+  background-size: 200%;
+}
+.Dark_Souls_page main .forBackground .menuDirectory .circleDrink3,
+.Dark_Souls_II_page main .forBackground .menuDirectory .circleDrink3,
+.Dark_Souls_III_page main .forBackground .menuDirectory .circleDrink3 {
+  background-image: url(/assets/img/weapon.jpg);
+  background-size: 120%;
+}
+.Dark_Souls_page footer,
+.Dark_Souls_II_page footer,
+.Dark_Souls_III_page footer {
+  display: flex;
+  align-items: center;
+  min-height: 250px;
+  background: #000000;
+  text-align: center;
+}
+.Dark_Souls_page footer .back_menu,
+.Dark_Souls_II_page footer .back_menu,
+.Dark_Souls_III_page footer .back_menu {
+  margin-bottom: 30px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Dark_Souls_page footer .back_menu .btn_menu,
+.Dark_Souls_II_page footer .back_menu .btn_menu,
+.Dark_Souls_III_page footer .back_menu .btn_menu {
+  font-size: 26px;
+  transition: all 0.5s;
+}
+.Dark_Souls_page footer .back_menu .btn_menu:hover,
+.Dark_Souls_II_page footer .back_menu .btn_menu:hover,
+.Dark_Souls_III_page footer .back_menu .btn_menu:hover {
+  text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.49), 0 0 1em rgba(255, 201, 126, 0.6), 0 0 0.2em rgba(255, 144, 88, 0.641);
+}
+.Dark_Souls_page footer .copy,
+.Dark_Souls_II_page footer .copy,
+.Dark_Souls_III_page footer .copy,
+.Dark_Souls_page footer p,
+.Dark_Souls_II_page footer p,
+.Dark_Souls_III_page footer p {
+  margin: 32px 0;
+  color: white;
+  font-size: 15px;
+}
+.Dark_Souls_page footer .copySpan,
+.Dark_Souls_II_page footer .copySpan,
+.Dark_Souls_III_page footer .copySpan {
+  margin-right: 6px;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes textadd {
+  0% {
+    filter: blur(2.6px);
+    transform: scale(0.7);
+  }
+  50% {
+    filter: blur(0.9px);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
