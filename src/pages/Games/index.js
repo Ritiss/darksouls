@@ -30,39 +30,6 @@ class GamesPage extends React.Component {
             }
         }
 
-        document.getElementById("toggleMusic").onclick = function () {
-
-            let myaudio = document.getElementById("bgmusic");
-
-            if (myaudio.paused == true) {
-                document.getElementById("bgmusic").play();
-                this.style.background = "url(/assets/img/note.png) no-repeat";
-                this.style.backgroundSize = "100%";
-            } else if (myaudio.paused == false) {
-                document.getElementById("bgmusic").pause();
-                this.style.background = "url(/assets/img/notent.png) no-repeat";
-                this.style.backgroundSize = "100%";
-            }
-        }
-
-
-        const audio = new Audio("../sounds/sound.mp3"),
-            buttonF = document.querySelectorAll(".fire_button");
-
-        buttonF.forEach(btn => {
-            btn.addEventListener("click", () => {
-                audio.play();
-                document.querySelector(".block").classList.add("transparent");
-                document.querySelector(".legend").classList.add("active");
-                document.querySelector(".text_frt").classList.add("text_add");
-                document.querySelector(".text_bf").classList.add("text_an");
-                document.querySelector(".blur").classList.add("blur_bg");
-                document.querySelector(".link").classList.add("rest");
-                document.querySelector(".here").classList.add("deleted");
-            });
-        });
-
-
         function onEntry(entry) {
             entry.forEach(change => {
                 if (change.isIntersecting) {
