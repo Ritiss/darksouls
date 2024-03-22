@@ -146,6 +146,7 @@ class ArmorItem extends React.Component {
                     </div>
                 </div>
             </main>
+            <video src={`/assets/videos/${gameItem.video}`} className={'video'} autoPlay loop muted />
             <footer>
                 <div className="cont">
                     <div className="back_menu">

@@ -184,6 +184,7 @@ class Armor extends React.Component {
                     </div>
                 </div>
             </div>
+            <video src={`/assets/videos/${gameItem.video}`} className={'video'} autoPlay loop muted />
         </div>
 
     }
