@@ -34,14 +34,9 @@ class ArmorItem extends React.Component {
             this.getDataGame
         ];
 
-        for (let i = 0; i < datas.length; i++) {
-            datas[i]();
-
-            if (!this.state.intervalIsSet) {
-                let interval = setInterval(datas[i](), 1000);
-                this.setState({ intervalIsSet: interval });
-            }
-        }
+        Promise.all(datas).then(() => {
+            // даю понять компоненту что данные загружены
+        })
 
         document.getElementById("toggleMusic").onclick = function () {
 
@@ -67,39 +62,32 @@ class ArmorItem extends React.Component {
         }
     }
 
-    getDataArmor = () => {
-        fetch('http://localhost:3001/api/getArmorData')
-            .then((data) => data.json())
-            .then((res) => this.setState({ armor: res.data }));
-    };
+    getDataArmor = () => fetch('http://localhost:3001/api/getArmorData')
+        .then((data) => data.json())
+        .then((res) => this.setState({ armor: res.data }));
 
-    getDataGame = () => {
-        fetch('http://localhost:3001/api/getGamesData')
-            .then((data) => data.json())
-            .then((res) => this.setState({ games: res.data }));
-    };
 
-    getDataGames = () => {
-        let context = this;
+    getDataGame = () => fetch('http://localhost:3001/api/getGamesData')
+        .then((data) => data.json())
+        .then((res) => this.setState({ games: res.data }));
 
-        fetch(`http://localhost:3001/api/getGamesData/:${context.state.currentGame}`)
-            .then((data) => data.json())
-            .then((res) => this.setState({
-                gameItem: {
+    getDataGames = () => fetch(`http://localhost:3001/api/getGamesData/:${context.state.currentGame}`)
+        .then((data) => data.json())
+        .then((res) => this.setState({
+            gameItem: {
 
-                    _id: res.data._id,
-                    id: res.data.id,
-                    title: res.data.title,
-                    release_date: res.data.release_date,
-                    description: res.data.description,
-                    img: res.data.img,
-                    video: res.data.video,
-                    audio: res.data.audio,
-                    info: res.data.info
-                }
-            }));
+                _id: res.data._id,
+                id: res.data.id,
+                title: res.data.title,
+                release_date: res.data.release_date,
+                description: res.data.description,
+                img: res.data.img,
+                video: res.data.video,
+                audio: res.data.audio,
+                info: res.data.info
+            }
+        }));
 
-    };
 
     render() {
         const { armor,
