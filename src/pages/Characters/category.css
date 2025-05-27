@@ -8,6 +8,14 @@
   src: local('OptimusPrinceps'), url('/assets/fonts/OptimusPrincepsSemiBold.ttf');
   font-weight: 600;
 }
+.characters_page #root > main,
+.armor_page #root > main,
+.weapons_page #root > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 .characters_page h1,
 .armor_page h1,
 .weapons_page h1,
@@ -215,9 +223,11 @@
   margin-bottom: 30px;
   height: 140px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+  gap: 24px;
 }
 .characters_page footer .back_menu .btn_menu,
 .armor_page footer .back_menu .btn_menu,
@@ -245,3 +255,4 @@
 .weapons_page footer .copySpan {
   margin-right: 6px;
 }
+/*# sourceMappingURL=category.css.map */

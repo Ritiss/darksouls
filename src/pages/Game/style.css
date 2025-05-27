@@ -354,9 +354,11 @@
   margin-bottom: 30px;
   height: 140px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+  gap: 24px;
 }
 .Dark_Souls_page footer .back_menu .btn_menu,
 .Dark_Souls_II_page footer .back_menu .btn_menu,
@@ -405,3 +407,4 @@
     transform: scale(1);
   }
 }
+/*# sourceMappingURL=style.css.map */

@@ -15,6 +15,12 @@
 .characters_page,
 .armor_page,
 .weapons_page {
+    #root > main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
 
     h1,
     h2,
@@ -196,9 +202,11 @@
             // border-bottom: 1px solid rgba(255, 204, 0, 0.49);
             height: 140px;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             flex-direction: row;
             justify-content: space-around;
+            gap: 24px;
 
             .btn_menu {
                 font-size: 26px;
