@@ -1,6 +1,8 @@
 ## Шаги для запуска:
 npm i
+
 npm run server
+
 npm run client
 
 
