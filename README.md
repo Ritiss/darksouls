@@ -1,3 +1,9 @@
+## Шаги для запуска:
+npm i
+npm run server
+npm run client
+
+
 ![1](https://github.com/Ritiss/darksouls/assets/115828441/59356fde-9b3c-48c5-b169-58282a3935c0)
 ![2](https://github.com/Ritiss/darksouls/assets/115828441/09d28f3d-d0d1-4ce1-a746-2de4d2ea7f35)
 ![3](https://github.com/Ritiss/darksouls/assets/115828441/e1d8b6bb-4665-4fec-aade-847fb61a9dcb)
